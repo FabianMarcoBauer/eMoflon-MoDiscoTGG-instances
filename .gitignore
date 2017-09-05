@@ -1,0 +1,11 @@
+*
+!*/
+!src.xmi
+!trg.xmi
+!src_processed.xmi
+!trg_processed.xmi
+!.gitignore
+/src.xmi
+/trg.xmi
+/src_processed.xmi
+/trg_processed.xmi
