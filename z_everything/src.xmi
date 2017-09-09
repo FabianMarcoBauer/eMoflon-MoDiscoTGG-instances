@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="ASCII"?>
+<java:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://www.eclipse.org/MoDisco/Java/0.2.incubation/java" name="Everything">
+  <ownedElements name="myPackage">
+    <ownedElements xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.0" name="InterfaceExtendingMyInterface">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.0">
+        <modifier visibility="public"/>
+        <type type="//@orphanTypes.0"/>
+        <fragments originalCompilationUnit="//@compilationUnits.0" name="imAField">
+          <initializer xsi:type="java:NumberLiteral" originalCompilationUnit="//@compilationUnits.0" tokenValue="0"/>
+        </fragments>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:MethodDeclaration" originalCompilationUnit="//@compilationUnits.0" name="imAMethod">
+        <modifier visibility="public"/>
+        <parameters originalCompilationUnit="//@compilationUnits.0" name="imAnArgument">
+          <modifier/>
+          <type type="//@orphanTypes.0"/>
+        </parameters>
+        <returnType type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+      </bodyDeclarations>
+      <superInterfaces type="//@ownedElements.0/@ownedElements.6"/>
+    </ownedElements>
+    <ownedElements xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.1" name="PackageNonGenericClass" usagesInTypeAccess="//@ownedElements.0/@ownedElements.2/@superClass">
+      <comments xsi:type="java:BlockComment" originalCompilationUnit="//@compilationUnits.1" content="/* package */" prefixOfParent="true"/>
+      <modifier/>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.1">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.9"/>
+        <fragments originalCompilationUnit="//@compilationUnits.1" name="privateIntArray"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.1">
+        <modifier visibility="public" static="true"/>
+        <type type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+        <fragments originalCompilationUnit="//@compilationUnits.1" name="publicStaticString"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:MethodDeclaration" originalCompilationUnit="//@compilationUnits.1" name="imAVoidMethod">
+        <modifier visibility="protected"/>
+        <body originalCompilationUnit="//@compilationUnits.1"/>
+        <parameters originalCompilationUnit="//@compilationUnits.1" name="a">
+          <modifier/>
+          <type type="//@orphanTypes.0"/>
+        </parameters>
+        <returnType type="//@orphanTypes.5"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:MethodDeclaration" originalCompilationUnit="//@compilationUnits.1" name="imAStaticIntMethod">
+        <modifier visibility="private" static="true"/>
+        <body originalCompilationUnit="//@compilationUnits.1">
+          <statements xsi:type="java:ReturnStatement" originalCompilationUnit="//@compilationUnits.1">
+            <expression xsi:type="java:NumberLiteral" originalCompilationUnit="//@compilationUnits.1" tokenValue="0_0"/>
+          </statements>
+        </body>
+        <returnType type="//@orphanTypes.0"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.1" name="InnerClassInClass">
+        <modifier visibility="protected"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.1" name="InnerInterfaceInClass">
+        <modifier visibility="private"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:EnumDeclaration" originalCompilationUnit="//@compilationUnits.1" name="InnerEnumInClass">
+        <modifier visibility="public"/>
+      </bodyDeclarations>
+    </ownedElements>
+    <ownedElements xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.2" name="ClassInheritingFromMyInterfaceAndPackageNonGenericClass">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:ConstructorDeclaration" originalCompilationUnit="//@compilationUnits.2" name="ClassInheritingFromMyInterfaceAndPackageNonGenericClass">
+        <modifier visibility="protected"/>
+        <body originalCompilationUnit="//@compilationUnits.2"/>
+        <parameters originalCompilationUnit="//@compilationUnits.2" name="arg">
+          <modifier/>
+          <type type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+        </parameters>
+      </bodyDeclarations>
+      <superInterfaces type="//@ownedElements.0/@ownedElements.6"/>
+      <superClass type="//@ownedElements.0/@ownedElements.1"/>
+    </ownedElements>
+    <ownedElements xsi:type="java:EnumDeclaration" originalCompilationUnit="//@compilationUnits.3" name="MyEnum">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:ConstructorDeclaration" originalCompilationUnit="//@compilationUnits.3" name="MyEnum">
+        <modifier visibility="private"/>
+        <body originalCompilationUnit="//@compilationUnits.3"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.3">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.1"/>
+        <fragments originalCompilationUnit="//@compilationUnits.3" name="imAnEnumField"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:MethodDeclaration" originalCompilationUnit="//@compilationUnits.3" name="imAnEnumMethod">
+        <modifier visibility="public"/>
+        <body originalCompilationUnit="//@compilationUnits.3">
+          <statements xsi:type="java:ReturnStatement" originalCompilationUnit="//@compilationUnits.3">
+            <expression xsi:type="java:PrefixExpression" originalCompilationUnit="//@compilationUnits.3" operator="-">
+              <operand xsi:type="java:NumberLiteral" originalCompilationUnit="//@compilationUnits.3" tokenValue="0_0.0__0e+1d"/>
+            </expression>
+          </statements>
+        </body>
+        <parameters originalCompilationUnit="//@compilationUnits.3" name="imAParameter">
+          <modifier/>
+          <type type="//@orphanTypes.8"/>
+        </parameters>
+        <returnType type="//@orphanTypes.3"/>
+      </bodyDeclarations>
+      <enumConstants originalCompilationUnit="//@compilationUnits.3" name="A">
+        <modifier/>
+      </enumConstants>
+    </ownedElements>
+    <ownedElements xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.4" name="GenericUser">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.4">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.10"/>
+        <fragments originalCompilationUnit="//@compilationUnits.4" name="genericClass"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.4">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.11"/>
+        <fragments originalCompilationUnit="//@compilationUnits.4" name="genericClassClass"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.4">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.12"/>
+        <fragments originalCompilationUnit="//@compilationUnits.4" name="genericClassInterface"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.4">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.13"/>
+        <fragments originalCompilationUnit="//@compilationUnits.4" name="genericInterface"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.4">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.14"/>
+        <fragments originalCompilationUnit="//@compilationUnits.4" name="genericInterfaceClass"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:FieldDeclaration" originalCompilationUnit="//@compilationUnits.4">
+        <modifier visibility="private"/>
+        <type type="//@orphanTypes.15"/>
+        <fragments originalCompilationUnit="//@compilationUnits.4" name="genericInterfaceInterface"/>
+      </bodyDeclarations>
+    </ownedElements>
+    <ownedElements xsi:type="java:AnnotationTypeDeclaration" originalCompilationUnit="//@compilationUnits.5" name="MyAnnotation">
+      <modifier visibility="public"/>
+    </ownedElements>
+    <ownedElements xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.6" name="MyInterface" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@superInterfaces.0 //@ownedElements.0/@ownedElements.2/@superInterfaces.0">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.6" name="InnerClassInInterface">
+        <comments xsi:type="java:BlockComment" originalCompilationUnit="//@compilationUnits.6" content="/*package*/" prefixOfParent="true"/>
+        <modifier/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.6" name="InnerInterfaceInInterface">
+        <modifier visibility="public"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:EnumDeclaration" originalCompilationUnit="//@compilationUnits.6" name="InnerEnumInInterface">
+        <modifier visibility="public"/>
+      </bodyDeclarations>
+    </ownedElements>
+    <ownedElements xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.7" name="GenericInterface" usagesInImports="//@compilationUnits.4/@imports.0" usagesInTypeAccess="//@orphanTypes.13/@type">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.7" name="InnerGenericInterfaceInInterface" usagesInTypeAccess="//@orphanTypes.14/@type">
+        <modifier visibility="public" static="true"/>
+        <typeParameters originalCompilationUnit="//@compilationUnits.7" name="U"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.7" name="InnerGenericClassInInterface" usagesInTypeAccess="//@orphanTypes.12/@type">
+        <modifier visibility="public" static="true"/>
+        <typeParameters originalCompilationUnit="//@compilationUnits.7" name="U"/>
+      </bodyDeclarations>
+      <typeParameters originalCompilationUnit="//@compilationUnits.7" name="T"/>
+    </ownedElements>
+    <ownedElements xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.8" name="GenericClass" usagesInImports="//@compilationUnits.4/@imports.1" usagesInTypeAccess="//@orphanTypes.10/@type">
+      <modifier visibility="public"/>
+      <bodyDeclarations xsi:type="java:InterfaceDeclaration" originalCompilationUnit="//@compilationUnits.8" name="InnerGenericInterfaceInClass" usagesInTypeAccess="//@orphanTypes.15/@type">
+        <modifier visibility="public" static="true"/>
+        <typeParameters originalCompilationUnit="//@compilationUnits.8" name="U"/>
+      </bodyDeclarations>
+      <bodyDeclarations xsi:type="java:ClassDeclaration" originalCompilationUnit="//@compilationUnits.8" name="InnerGenericClassInClass" usagesInTypeAccess="//@orphanTypes.11/@type">
+        <modifier visibility="public" static="true"/>
+        <typeParameters originalCompilationUnit="//@compilationUnits.8" name="U"/>
+      </bodyDeclarations>
+      <typeParameters originalCompilationUnit="//@compilationUnits.8" name="T"/>
+    </ownedElements>
+  </ownedElements>
+  <ownedElements name="java" proxy="true">
+    <ownedPackages name="lang" proxy="true">
+      <ownedElements xsi:type="java:ClassDeclaration" name="String" proxy="true" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.1/@returnType //@ownedElements.0/@ownedElements.1/@bodyDeclarations.1/@type //@ownedElements.0/@ownedElements.2/@bodyDeclarations.0/@parameters.0/@type //@orphanTypes.10/@typeArguments.0 //@orphanTypes.11/@typeArguments.0 //@orphanTypes.12/@typeArguments.0 //@orphanTypes.13/@typeArguments.0 //@orphanTypes.14/@typeArguments.0 //@orphanTypes.15/@typeArguments.0">
+        <superInterfaces type="//@ownedElements.1/@ownedPackages.1/@ownedElements.0"/>
+        <superInterfaces type="//@ownedElements.1/@ownedPackages.0/@ownedElements.1"/>
+        <superInterfaces type="//@ownedElements.1/@ownedPackages.0/@ownedElements.2"/>
+      </ownedElements>
+      <ownedElements xsi:type="java:InterfaceDeclaration" name="Comparable" proxy="true" usagesInTypeAccess="//@ownedElements.1/@ownedPackages.0/@ownedElements.0/@superInterfaces.1">
+        <typeParameters name="T" proxy="true"/>
+      </ownedElements>
+      <ownedElements xsi:type="java:InterfaceDeclaration" name="CharSequence" proxy="true" usagesInTypeAccess="//@ownedElements.1/@ownedPackages.0/@ownedElements.0/@superInterfaces.2"/>
+    </ownedPackages>
+    <ownedPackages name="io" proxy="true">
+      <ownedElements xsi:type="java:InterfaceDeclaration" name="Serializable" proxy="true" usagesInTypeAccess="//@ownedElements.1/@ownedPackages.0/@ownedElements.0/@superInterfaces.0"/>
+    </ownedPackages>
+  </ownedElements>
+  <orphanTypes xsi:type="java:PrimitiveTypeInt" name="int" usagesInTypeAccess="//@ownedElements.0/@ownedElements.0/@bodyDeclarations.0/@type //@ownedElements.0/@ownedElements.0/@bodyDeclarations.1/@parameters.0/@type //@orphanTypes.9/@elementType //@ownedElements.0/@ownedElements.1/@bodyDeclarations.2/@parameters.0/@type //@ownedElements.0/@ownedElements.1/@bodyDeclarations.3/@returnType"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeLong" name="long" usagesInTypeAccess="//@ownedElements.0/@ownedElements.3/@bodyDeclarations.1/@type"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeFloat" name="float"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeDouble" name="double" usagesInTypeAccess="//@ownedElements.0/@ownedElements.3/@bodyDeclarations.2/@returnType"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeBoolean" name="boolean"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeVoid" name="void" usagesInTypeAccess="//@ownedElements.0/@ownedElements.1/@bodyDeclarations.2/@returnType"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeChar" name="char"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeShort" name="short"/>
+  <orphanTypes xsi:type="java:PrimitiveTypeByte" name="byte" usagesInTypeAccess="//@ownedElements.0/@ownedElements.3/@bodyDeclarations.2/@parameters.0/@type"/>
+  <orphanTypes xsi:type="java:ArrayType" name="int[]" usagesInTypeAccess="//@ownedElements.0/@ownedElements.1/@bodyDeclarations.0/@type" dimensions="1">
+    <elementType type="//@orphanTypes.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="myPackage.GenericClass&lt;java.lang.String>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.4/@bodyDeclarations.0/@type">
+    <type type="//@ownedElements.0/@ownedElements.8"/>
+    <typeArguments type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="myPackage.GenericClass.InnerGenericClassInClass&lt;java.lang.String>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.4/@bodyDeclarations.1/@type">
+    <type type="//@ownedElements.0/@ownedElements.8/@bodyDeclarations.1"/>
+    <typeArguments type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="myPackage.GenericInterface.InnerGenericClassInInterface&lt;java.lang.String>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.4/@bodyDeclarations.2/@type">
+    <type type="//@ownedElements.0/@ownedElements.7/@bodyDeclarations.1"/>
+    <typeArguments type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="myPackage.GenericInterface&lt;java.lang.String>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.4/@bodyDeclarations.3/@type">
+    <type type="//@ownedElements.0/@ownedElements.7"/>
+    <typeArguments type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="myPackage.GenericInterface.InnerGenericInterfaceInInterface&lt;java.lang.String>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.4/@bodyDeclarations.4/@type">
+    <type type="//@ownedElements.0/@ownedElements.7/@bodyDeclarations.0"/>
+    <typeArguments type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+  </orphanTypes>
+  <orphanTypes xsi:type="java:ParameterizedType" name="myPackage.GenericClass.InnerGenericInterfaceInClass&lt;java.lang.String>" usagesInTypeAccess="//@ownedElements.0/@ownedElements.4/@bodyDeclarations.5/@type">
+    <type type="//@ownedElements.0/@ownedElements.8/@bodyDeclarations.0"/>
+    <typeArguments type="//@ownedElements.1/@ownedPackages.0/@ownedElements.0"/>
+  </orphanTypes>
+  <compilationUnits name="InterfaceExtendingMyInterface.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\InterfaceExtendingMyInterface.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.0"/>
+  <compilationUnits name="PackageNonGenericClass.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\PackageNonGenericClass.java" commentList="//@ownedElements.0/@ownedElements.1/@comments.0" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.1"/>
+  <compilationUnits name="ClassInheritingFromMyInterfaceAndPackageNonGenericClass.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\ClassInheritingFromMyInterfaceAndPackageNonGenericClass.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.2"/>
+  <compilationUnits name="MyEnum.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\MyEnum.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.3"/>
+  <compilationUnits name="GenericUser.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\GenericUser.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.4">
+    <imports originalCompilationUnit="//@compilationUnits.4" importedElement="//@ownedElements.0/@ownedElements.7"/>
+    <imports originalCompilationUnit="//@compilationUnits.4" importedElement="//@ownedElements.0/@ownedElements.8"/>
+  </compilationUnits>
+  <compilationUnits name="MyAnnotation.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\MyAnnotation.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.5"/>
+  <compilationUnits name="MyInterface.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\MyInterface.java" commentList="//@ownedElements.0/@ownedElements.6/@bodyDeclarations.0/@comments.0" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.6"/>
+  <compilationUnits name="GenericInterface.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\GenericInterface.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.7"/>
+  <compilationUnits name="GenericClass.java" originalFilePath="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\GenericClass.java" package="//@ownedElements.0" types="//@ownedElements.0/@ownedElements.8"/>
+</java:Model>

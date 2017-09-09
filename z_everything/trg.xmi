@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model name="root model">
+    <packagedElement xsi:type="uml:Model" name="Everything">
+      <packagedElement xsi:type="uml:Package" name="myPackage" visibility="public">
+        <packagedElement xsi:type="uml:Interface" name="InterfaceExtendingMyInterface" visibility="public">
+          <generalization general="/0/Everything/myPackage/MyInterface"/>
+          <ownedAttribute name="imAField" visibility="public" type="/0/Everything/Common%20Java%20datatypes/int">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedOperation name="imAMethod" visibility="public">
+            <ownedParameter visibility="public" type="/0/externals/java/lang/String" direction="return">
+              <lowerValue xsi:type="uml:LiteralInteger"/>
+              <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+            </ownedParameter>
+            <ownedParameter name="imAnArgument" visibility="public" type="/0/Everything/Common%20Java%20datatypes/int">
+              <lowerValue xsi:type="uml:LiteralInteger"/>
+              <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="PackageNonGenericClass" visibility="public">
+          <ownedAttribute name="privateIntArray" visibility="public" type="/0/Everything/Common%20Java%20datatypes/int">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute name="publicStaticString" visibility="public" isStatic="true" type="/0/externals/java/lang/String">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedOperation name="imAVoidMethod" visibility="protected">
+            <ownedParameter visibility="public" type="/0/Everything/Common%20Java%20datatypes/void" direction="return">
+              <lowerValue xsi:type="uml:LiteralInteger"/>
+              <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+            </ownedParameter>
+            <ownedParameter name="a" visibility="public" type="/0/Everything/Common%20Java%20datatypes/int">
+              <lowerValue xsi:type="uml:LiteralInteger"/>
+              <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation name="imAStaticIntMethod" visibility="private">
+            <ownedParameter visibility="public" type="/0/Everything/Common%20Java%20datatypes/int" direction="return">
+              <lowerValue xsi:type="uml:LiteralInteger"/>
+              <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+            </ownedParameter>
+          </ownedOperation>
+          <nestedClassifier xsi:type="uml:Class" name="InnerClassInClass" visibility="public"/>
+          <nestedClassifier xsi:type="uml:Interface" name="InnerInterfaceInClass" visibility="public"/>
+          <nestedClassifier xsi:type="uml:Enumeration" name="InnerEnumInClass" visibility="public"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="ClassInheritingFromMyInterfaceAndPackageNonGenericClass" visibility="public">
+          <generalization general="/0/Everything/myPackage/PackageNonGenericClass"/>
+          <interfaceRealization contract="/0/Everything/myPackage/MyInterface"/>
+          <ownedOperation name="ClassInheritingFromMyInterfaceAndPackageNonGenericClass" visibility="protected">
+            <ownedParameter name="arg" visibility="public" type="/0/externals/java/lang/String">
+              <lowerValue xsi:type="uml:LiteralInteger"/>
+              <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Enumeration" name="MyEnum" visibility="public">
+          <ownedLiteral name="enum literal" classifier="/0/Everything/myPackage/MyEnum"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="GenericUser" visibility="public">
+          <ownedAttribute name="genericClass" visibility="public" type="/0/Everything/myPackage/myPackage.GenericClass%3Cjava.lang.String%3E" association="/0/Everything/myPackage/@packagedElement.17">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute name="genericClassClass" visibility="public" type="/0/Everything/myPackage/myPackage.GenericClass.InnerGenericClassInClass%3Cjava.lang.String%3E" association="/0/Everything/myPackage/@packagedElement.18">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute name="genericClassInterface" visibility="public" type="/0/Everything/myPackage/myPackage.GenericInterface.InnerGenericClassInInterface%3Cjava.lang.String%3E" association="/0/Everything/myPackage/@packagedElement.19">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute name="genericInterface" visibility="public" type="/0/Everything/myPackage/myPackage.GenericInterface%3Cjava.lang.String%3E" association="/0/Everything/myPackage/@packagedElement.20">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute name="genericInterfaceClass" visibility="public" type="/0/Everything/myPackage/myPackage.GenericInterface.InnerGenericInterfaceInInterface%3Cjava.lang.String%3E" association="/0/Everything/myPackage/@packagedElement.21">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute name="genericInterfaceInterface" visibility="public" type="/0/Everything/myPackage/myPackage.GenericClass.InnerGenericInterfaceInClass%3Cjava.lang.String%3E" association="/0/Everything/myPackage/@packagedElement.22">
+            <lowerValue xsi:type="uml:LiteralInteger"/>
+            <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Interface" name="MyAnnotation" visibility="public"/>
+        <packagedElement xsi:type="uml:Interface" name="MyInterface" visibility="public">
+          <nestedClassifier xsi:type="uml:Class" name="InnerClassInInterface" visibility="public"/>
+          <nestedClassifier xsi:type="uml:Interface" name="InnerInterfaceInInterface" visibility="public"/>
+          <nestedClassifier xsi:type="uml:Enumeration" name="InnerEnumInInterface" visibility="public"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Interface" name="GenericInterface">
+          <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="GenericInterface&lt;T>">
+            <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+              <ownedParameteredElement xsi:type="uml:Class" name="T"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <nestedClassifier xsi:type="uml:Interface" name="InnerGenericInterfaceInInterface">
+            <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="InnerGenericInterfaceInInterface&lt;U>">
+              <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+                <ownedParameteredElement xsi:type="uml:Class" name="U"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </nestedClassifier>
+          <nestedClassifier xsi:type="uml:Class" name="InnerGenericClassInInterface">
+            <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="InnerGenericClassInInterface&lt;U>">
+              <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+                <ownedParameteredElement xsi:type="uml:Class" name="U"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </nestedClassifier>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="GenericClass">
+          <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="GenericClass&lt;T>">
+            <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+              <ownedParameteredElement xsi:type="uml:Class" name="T"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+          <nestedClassifier xsi:type="uml:Interface" name="InnerGenericInterfaceInClass">
+            <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="InnerGenericInterfaceInClass&lt;U>">
+              <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+                <ownedParameteredElement xsi:type="uml:Class" name="U"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </nestedClassifier>
+          <nestedClassifier xsi:type="uml:Class" name="InnerGenericClassInClass">
+            <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="InnerGenericClassInClass&lt;U>">
+              <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+                <ownedParameteredElement xsi:type="uml:Class" name="U"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </nestedClassifier>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Dependency" client="/0/Everything/myPackage/GenericUser" supplier="/0/Everything/myPackage/GenericInterface"/>
+        <packagedElement xsi:type="uml:Dependency" client="/0/Everything/myPackage/GenericUser" supplier="/0/Everything/myPackage/GenericClass"/>
+        <packagedElement xsi:type="uml:Interface" name="myPackage.GenericInterface&lt;java.lang.String>">
+          <templateBinding signature="/0/Everything/myPackage/GenericInterface/GenericInterface%3CT%3E">
+            <parameterSubstitution actual="/0/externals/java/lang/String" formal="/0/Everything/myPackage/GenericInterface/GenericInterface%3CT%3E/@ownedParameter.0"/>
+          </templateBinding>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Interface" name="myPackage.GenericInterface.InnerGenericInterfaceInInterface&lt;java.lang.String>">
+          <templateBinding signature="/0/Everything/myPackage/GenericInterface/InnerGenericInterfaceInInterface/InnerGenericInterfaceInInterface%3CU%3E">
+            <parameterSubstitution actual="/0/externals/java/lang/String" formal="/0/Everything/myPackage/GenericInterface/InnerGenericInterfaceInInterface/InnerGenericInterfaceInInterface%3CU%3E/@ownedParameter.0"/>
+          </templateBinding>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Interface" name="myPackage.GenericClass.InnerGenericInterfaceInClass&lt;java.lang.String>">
+          <templateBinding signature="/0/Everything/myPackage/GenericClass/InnerGenericInterfaceInClass/InnerGenericInterfaceInClass%3CU%3E">
+            <parameterSubstitution actual="/0/externals/java/lang/String" formal="/0/Everything/myPackage/GenericClass/InnerGenericInterfaceInClass/InnerGenericInterfaceInClass%3CU%3E/@ownedParameter.0"/>
+          </templateBinding>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="myPackage.GenericClass&lt;java.lang.String>">
+          <templateBinding signature="/0/Everything/myPackage/GenericClass/GenericClass%3CT%3E">
+            <parameterSubstitution actual="/0/externals/java/lang/String" formal="/0/Everything/myPackage/GenericClass/GenericClass%3CT%3E/@ownedParameter.0"/>
+          </templateBinding>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="myPackage.GenericClass.InnerGenericClassInClass&lt;java.lang.String>">
+          <templateBinding signature="/0/Everything/myPackage/GenericClass/InnerGenericClassInClass/InnerGenericClassInClass%3CU%3E">
+            <parameterSubstitution actual="/0/externals/java/lang/String" formal="/0/Everything/myPackage/GenericClass/InnerGenericClassInClass/InnerGenericClassInClass%3CU%3E/@ownedParameter.0"/>
+          </templateBinding>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Class" name="myPackage.GenericInterface.InnerGenericClassInInterface&lt;java.lang.String>">
+          <templateBinding signature="/0/Everything/myPackage/GenericInterface/InnerGenericClassInInterface/InnerGenericClassInInterface%3CU%3E">
+            <parameterSubstitution actual="/0/externals/java/lang/String" formal="/0/Everything/myPackage/GenericInterface/InnerGenericClassInInterface/InnerGenericClassInInterface%3CU%3E/@ownedParameter.0"/>
+          </templateBinding>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Association" memberEnd="/0/Everything/myPackage/GenericUser/genericClass /0/Everything/myPackage/@packagedElement.17/@ownedEnd.0">
+          <ownedEnd type="/0/Everything/myPackage/GenericUser" association="/0/Everything/myPackage/@packagedElement.17"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Association" memberEnd="/0/Everything/myPackage/GenericUser/genericClassClass /0/Everything/myPackage/@packagedElement.18/@ownedEnd.0">
+          <ownedEnd type="/0/Everything/myPackage/GenericUser" association="/0/Everything/myPackage/@packagedElement.18"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Association" memberEnd="/0/Everything/myPackage/GenericUser/genericClassInterface /0/Everything/myPackage/@packagedElement.19/@ownedEnd.0">
+          <ownedEnd type="/0/Everything/myPackage/GenericUser" association="/0/Everything/myPackage/@packagedElement.19"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Association" memberEnd="/0/Everything/myPackage/GenericUser/genericInterface /0/Everything/myPackage/@packagedElement.20/@ownedEnd.0">
+          <ownedEnd type="/0/Everything/myPackage/GenericUser" association="/0/Everything/myPackage/@packagedElement.20"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Association" memberEnd="/0/Everything/myPackage/GenericUser/genericInterfaceClass /0/Everything/myPackage/@packagedElement.21/@ownedEnd.0">
+          <ownedEnd type="/0/Everything/myPackage/GenericUser" association="/0/Everything/myPackage/@packagedElement.21"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Association" memberEnd="/0/Everything/myPackage/GenericUser/genericInterfaceInterface /0/Everything/myPackage/@packagedElement.22/@ownedEnd.0">
+          <ownedEnd type="/0/Everything/myPackage/GenericUser" association="/0/Everything/myPackage/@packagedElement.22"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xsi:type="uml:Package" name="Common Java datatypes" visibility="public">
+        <packagedElement xsi:type="uml:PrimitiveType" name="int" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="long" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="float" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="double" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="boolean" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="void" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="char" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="short" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="byte" visibility="public"/>
+        <packagedElement xsi:type="uml:PrimitiveType" name="string" visibility="public"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Model" name="externals">
+      <packagedElement xsi:type="uml:Package" name="java" visibility="public">
+        <packagedElement xsi:type="uml:Package" name="lang" visibility="public">
+          <packagedElement xsi:type="uml:Class" name="String" visibility="public">
+            <interfaceRealization contract="/0/externals/java/io/Serializable"/>
+            <interfaceRealization contract="/0/externals/java/lang/Comparable"/>
+            <interfaceRealization contract="/0/externals/java/lang/CharSequence"/>
+          </packagedElement>
+          <packagedElement xsi:type="uml:Interface" name="Comparable">
+            <ownedTemplateSignature xsi:type="uml:RedefinableTemplateSignature" name="Comparable&lt;T>">
+              <ownedParameter xsi:type="uml:ClassifierTemplateParameter">
+                <ownedParameteredElement xsi:type="uml:Class" name="T"/>
+              </ownedParameter>
+            </ownedTemplateSignature>
+          </packagedElement>
+          <packagedElement xsi:type="uml:Interface" name="CharSequence" visibility="public"/>
+        </packagedElement>
+        <packagedElement xsi:type="uml:Package" name="io" visibility="public">
+          <packagedElement xsi:type="uml:Interface" name="Serializable" visibility="public"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Model" name="source references">
+      <packagedElement xsi:type="uml:Artifact" name="InterfaceExtendingMyInterface.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\InterfaceExtendingMyInterface.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="PackageNonGenericClass.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\PackageNonGenericClass.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="ClassInheritingFromMyInterfaceAndPackageNonGenericClass.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\ClassInheritingFromMyInterfaceAndPackageNonGenericClass.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="MyEnum.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\MyEnum.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="GenericUser.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\GenericUser.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="MyAnnotation.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\MyAnnotation.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="MyInterface.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\MyInterface.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="GenericInterface.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\GenericInterface.java"/>
+      <packagedElement xsi:type="uml:Artifact" name="GenericClass.java" visibility="public" fileName="D:\uni\Hiwi\ibex-democles\runtime\Everything\src\myPackage\GenericClass.java"/>
+    </packagedElement>
+  </uml:Model>
+  <uml:Property name="imAnEnumField" visibility="public" type="/0/Everything/Common%20Java%20datatypes/long">
+    <lowerValue xsi:type="uml:LiteralInteger"/>
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+  </uml:Property>
+  <uml:Operation name="MyEnum" visibility="private"/>
+  <uml:Operation name="imAnEnumMethod" visibility="public">
+    <ownedParameter visibility="public" type="/0/Everything/Common%20Java%20datatypes/double" direction="return">
+      <lowerValue xsi:type="uml:LiteralInteger"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+    </ownedParameter>
+    <ownedParameter name="imAParameter" visibility="public" type="/0/Everything/Common%20Java%20datatypes/byte">
+      <lowerValue xsi:type="uml:LiteralInteger"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" value="1"/>
+    </ownedParameter>
+  </uml:Operation>
+</xmi:XMI>
